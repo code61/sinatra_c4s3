@@ -1,0 +1,26 @@
+<h1>Athletes from London 2012</h1>
+
+<table class='table'>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Country</th>
+    <th>Sport</th>
+    <th>Gold</th>
+    <th>Silver</th>
+    <th>Bronze</th>
+  </tr>
+  <% @athletes.each do |athlete| %>
+    <tr>
+      <td><%= athlete.name    %></td>
+      <td><%= athlete.age     %></td>
+      <td><%= athlete.country %></td>
+      <td><%= athlete.sport   %></td>
+      <td><%= athlete.gold    %></td>
+      <td><%= athlete.silver  %></td>
+      <td><%= athlete.bronze  %></td>
+    </tr>
+  <% end %>
+</table>
+
+
